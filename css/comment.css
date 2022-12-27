@@ -275,6 +275,9 @@
 .v .item .tag.friend {
   background-color: var(--color-aqua);
 }
+.v .item .tag.zhangfei {
+  background-color: var(--color-green);
+}
 .v .item .tag.investor {
   background-color: var(--color-pink);
 }
