@@ -272,9 +272,6 @@
 .v .item .tag.master {
   background-color: var(--color-orange);
 }
-.v .item .tag.friend {
-  background-color: var(--color-aqua);
-}
 .v .item .tag.zhangfei {
   background-color: var(--color-green);
 }
