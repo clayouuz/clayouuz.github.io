@@ -278,9 +278,6 @@
 .v .item .tag.zhangfei {
   background-color: var(--color-green);
 }
-.v .item .tag.investor {
-  background-color: var(--color-pink);
-}
 .v .item .at {
   color: var(--primary-color);
 }
