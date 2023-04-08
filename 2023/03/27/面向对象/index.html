@@ -100,12 +100,12 @@ Saigyouji Yuyuko!</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?53660"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?178568"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?435857"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?633889"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?194729"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?58493"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?494028"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?336408"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?374885"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?742742"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?817286"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?593492"></li>
         </ul>
       </div>
     </header>
@@ -149,32 +149,34 @@ Saigyouji Yuyuko!</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="string"><a href="#string" class="headerlink" title="string"></a>string</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string.<span class="built_in">empty</span>();</span><br><span class="line">string.<span class="built_in">size</span>();</span><br></pre></td></tr></table></figure>
-
-<h3 id="头文件cctype"><a href="#头文件cctype" class="headerlink" title="头文件cctype"></a>头文件cctype</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isalnum</span>(c)	 当c是字母或数字时为真 </span><br><span class="line"><span class="built_in">isalpha</span>(c)	 当c是字母时为真 </span><br><span class="line"><span class="built_in">iscntrl</span>(c)	 当c是控制字符时为真 </span><br><span class="line"><span class="built_in">isdigit</span>(c)	 当c是数字时为真 </span><br><span class="line"><span class="built_in">isgraph</span>(c)	 当c不是空格但可以打印时为真 </span><br><span class="line"><span class="built_in">islower</span>(c)	 当c是小写字母时为真 </span><br><span class="line"><span class="built_in">isprint</span>(c)	 当c是可打印字符时为真 </span><br><span class="line"><span class="built_in">ispunct</span>(c)	 当c是标点符号时为真 </span><br><span class="line"><span class="built_in">isspace</span>(c)	 当c是空白时为真</span><br><span class="line">            （空格、横向制表符、纵向制表符、回车符、换行符、进纸符） </span><br><span class="line"><span class="built_in">isupper</span>(c)	 当c是大写字母时为真 </span><br><span class="line"><span class="built_in">isxdigit</span>(c)	 当c是十六进制数字时为真 </span><br><span class="line"><span class="built_in">tolower</span>(c)	 当c是大写字母，输出对应的小写字母；否则原样输出<span class="function">c</span></span><br><span class="line"><span class="function"><span class="title">toupper</span><span class="params">(c)</span>	 当c是小写字母，输出对应的大写字母；否则原样输出c</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
-<h3 id="处理每个字符-使用基于范围for语句"><a href="#处理每个字符-使用基于范围for语句" class="headerlink" title="处理每个字符 使用基于范围for语句"></a>处理每个字符 使用基于范围for语句</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- 语法形式</span><br><span class="line"><span class="keyword">for</span>(declaration: expression)</span><br><span class="line">    statement</span><br><span class="line">expression是一个对象，用于表示一个序列</span><br><span class="line">declaration负责定义一个变量，用于访问序列中基础元素</span><br><span class="line">每次迭代，declaration部分变量初始化为expression部分的下一个元素值</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> c: str)</span><br><span class="line">    <span class="function">statement</span></span><br><span class="line"><span class="function"><span class="title">for</span> <span class="params">(<span class="keyword">auto</span> &amp;c: str)</span><span class="comment">//使用引用直接改变字符串中的字符。</span></span></span><br><span class="line"><span class="function">    statement</span></span><br></pre></td></tr></table></figure>
-<h3 id="容器vector"><a href="#容器vector" class="headerlink" title="容器vector"></a>容器vector</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; i;<span class="comment">//创建空容器</span></span><br><span class="line"><span class="function">vector <span class="title">i1</span><span class="params">(i2)</span></span>;<span class="comment">//vector i1=i2;</span></span><br><span class="line">vector i&#123;<span class="number">10</span>&#125;;</span><br><span class="line"><span class="function">vector <span class="title">i</span><span class="params">(<span class="number">10</span>,<span class="number">1</span>)</span></span>;<span class="comment">//10个1</span></span><br><span class="line">vector i&#123;<span class="number">10</span>,<span class="number">1</span>&#125;;<span class="comment">//10和1</span></span><br><span class="line">i.<span class="built_in">push_back</span>();<span class="comment">//在尾部添加</span></span><br><span class="line">i.<span class="built_in">empty</span>();<span class="comment">//空返回true</span></span><br><span class="line">i.<span class="built_in">size</span>();</span><br><span class="line">i[n];<span class="comment">//不能用下标添加元素</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="迭代器-容器的指针"><a href="#迭代器-容器的指针" class="headerlink" title="迭代器:容器的指针"></a>迭代器:容器的指针</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; i;</span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator a=i.<span class="built_in">begin</span>();</span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::const_iterator a=i.<span class="built_in">begin</span>();</span><br><span class="line"><span class="keyword">auto</span> a=i.<span class="built_in">begin</span>();</span><br><span class="line"><span class="keyword">auto</span> a=i.<span class="built_in">end</span>();     <span class="comment">//end-1指向最后一个元素</span></span><br><span class="line">*a;</span><br><span class="line"><span class="keyword">auto</span> a1=a.<span class="built_in">cbegin</span>();</span><br><span class="line"><span class="keyword">auto</span> a1=a.<span class="built_in">cend</span>();   <span class="comment">//a为迭代器</span></span><br><span class="line">(*a).<span class="built_in">empty</span>(); <span class="comment">//解引用it，调用结果对象的empty成员</span></span><br><span class="line">*a.<span class="built_in">empty</span>();   <span class="comment">//错误，试图访问it的empty成员，it是个迭代器，没</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="命名的强制类型转换"><a href="#命名的强制类型转换" class="headerlink" title="命名的强制类型转换"></a>命名的强制类型转换</h3><p>cast-name<type>(expression)</p>
+    <h2 id="string"><a class="markdownIt-Anchor" href="#string">#</a> string</h2>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">string.<span class="built_in">empty</span>();</span><br><span class="line">string.<span class="built_in">size</span>();</span><br></pre></td></tr></table></figure>
+<h3 id="头文件cctype"><a class="markdownIt-Anchor" href="#头文件cctype">#</a> 头文件 cctype</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">isalnum</span>(c)	 当c是字母或数字时为真 </span><br><span class="line"><span class="built_in">isalpha</span>(c)	 当c是字母时为真 </span><br><span class="line"><span class="built_in">iscntrl</span>(c)	 当c是控制字符时为真 </span><br><span class="line"><span class="built_in">isdigit</span>(c)	 当c是数字时为真 </span><br><span class="line"><span class="built_in">isgraph</span>(c)	 当c不是空格但可以打印时为真 </span><br><span class="line"><span class="built_in">islower</span>(c)	 当c是小写字母时为真 </span><br><span class="line"><span class="built_in">isprint</span>(c)	 当c是可打印字符时为真 </span><br><span class="line"><span class="built_in">ispunct</span>(c)	 当c是标点符号时为真 </span><br><span class="line"><span class="built_in">isspace</span>(c)	 当c是空白时为真</span><br><span class="line">            （空格、横向制表符、纵向制表符、回车符、换行符、进纸符） </span><br><span class="line"><span class="built_in">isupper</span>(c)	 当c是大写字母时为真 </span><br><span class="line"><span class="built_in">isxdigit</span>(c)	 当c是十六进制数字时为真 </span><br><span class="line"><span class="built_in">tolower</span>(c)	 当c是大写字母，输出对应的小写字母；否则原样输出<span class="function">c</span></span><br><span class="line"><span class="function"><span class="title">toupper</span><span class="params">(c)</span>	 当c是小写字母，输出对应的大写字母；否则原样输出c</span></span><br><span class="line"><span class="function"></span></span><br></pre></td></tr></table></figure>
+<h3 id="处理每个字符-使用基于范围for语句"><a class="markdownIt-Anchor" href="#处理每个字符-使用基于范围for语句">#</a> 处理每个字符 使用基于范围 for 语句</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">- 语法形式</span><br><span class="line"><span class="keyword">for</span>(declaration: expression)</span><br><span class="line">    statement</span><br><span class="line">expression是一个对象，用于表示一个序列</span><br><span class="line">declaration负责定义一个变量，用于访问序列中基础元素</span><br><span class="line">每次迭代，declaration部分变量初始化为expression部分的下一个元素值</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> c: str)</span><br><span class="line">    <span class="function">statement</span></span><br><span class="line"><span class="function"><span class="title">for</span> <span class="params">(<span class="keyword">auto</span> &amp;c: str)</span><span class="comment">//使用引用直接改变字符串中的字符。</span></span></span><br><span class="line"><span class="function">    statement</span></span><br></pre></td></tr></table></figure>
+<h3 id="容器vector"><a class="markdownIt-Anchor" href="#容器vector">#</a> 容器 vector</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; i;<span class="comment">//创建空容器</span></span><br><span class="line"><span class="function">vector <span class="title">i1</span><span class="params">(i2)</span></span>;<span class="comment">//vector i1=i2;</span></span><br><span class="line">vector i&#123;<span class="number">10</span>&#125;;</span><br><span class="line"><span class="function">vector <span class="title">i</span><span class="params">(<span class="number">10</span>,<span class="number">1</span>)</span></span>;<span class="comment">//10个1</span></span><br><span class="line">vector i&#123;<span class="number">10</span>,<span class="number">1</span>&#125;;<span class="comment">//10和1</span></span><br><span class="line">i.<span class="built_in">push_back</span>();<span class="comment">//在尾部添加</span></span><br><span class="line">i.<span class="built_in">empty</span>();<span class="comment">//空返回true</span></span><br><span class="line">i.<span class="built_in">size</span>();</span><br><span class="line">i[n];<span class="comment">//不能用下标添加元素</span></span><br></pre></td></tr></table></figure>
+<h3 id="迭代器容器的指针"><a class="markdownIt-Anchor" href="#迭代器容器的指针">#</a> 迭代器：容器的指针</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;<span class="type">int</span>&gt; i;</span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::iterator a=i.<span class="built_in">begin</span>();</span><br><span class="line">vector&lt;<span class="type">int</span>&gt;::const_iterator a=i.<span class="built_in">begin</span>();</span><br><span class="line"><span class="keyword">auto</span> a=i.<span class="built_in">begin</span>();</span><br><span class="line"><span class="keyword">auto</span> a=i.<span class="built_in">end</span>();     <span class="comment">//end-1指向最后一个元素</span></span><br><span class="line">*a;</span><br><span class="line"><span class="keyword">auto</span> a1=a.<span class="built_in">cbegin</span>();</span><br><span class="line"><span class="keyword">auto</span> a1=a.<span class="built_in">cend</span>();   <span class="comment">//a为迭代器</span></span><br><span class="line">(*a).<span class="built_in">empty</span>(); <span class="comment">//解引用it，调用结果对象的empty成员</span></span><br><span class="line">*a.<span class="built_in">empty</span>();   <span class="comment">//错误，试图访问it的empty成员，it是个迭代器，没</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="命名的强制类型转换"><a class="markdownIt-Anchor" href="#命名的强制类型转换">#</a> 命名的强制类型转换</h3>
+<p>cast-name<type>(expression)</p>
 <ul>
 <li>type 转换目标类型。若是引用，则结果是左值。</li>
 <li>expression 要转换的值</li>
-<li>cast-name是static_cast,dynamic_cast,const_cast,reinterpret_cast中一种。<ul>
-<li>dynamic_cast支持运行时类型识别</li>
-<li>static_cast:任何明确定义的类型转换，只要不包含底层const，都可以使用。</li>
-<li>const_cast只能改变运算对象的底层const，一般可用于去除const性质。</li>
-<li>reinterpret_cast通常为运算对象的位模式提供低层次上的重新解释。</li>
+<li>cast-name 是 static_cast,dynamic_cast,const_cast,reinterpret_cast 中一种。
+<ul>
+<li>dynamic_cast 支持运行时类型识别</li>
+<li>static_cast: 任何明确定义的类型转换，只要不包含底层 const，都可以使用。</li>
+<li>const_cast 只能改变运算对象的底层 const，一般可用于去除 const 性质。</li>
+<li>reinterpret_cast 通常为运算对象的位模式提供低层次上的重新解释。</li>
 </ul>
 </li>
 </ul>
-<h3 id="try"><a href="#try" class="headerlink" title="try"></a>try</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (item1.<span class="built_in">isbn</span>() != item2.<span class="built_in">isbn</span>())</span><br><span class="line">    <span class="keyword">throw</span> <span class="built_in">runtime_error</span>(<span class="string">&quot;Data must refer to same ISBN&quot;</span>);</span><br><span class="line">    <span class="comment">// if we&#x27;re still here, the ISBNs are the same</span></span><br><span class="line">    cout &lt;&lt; item1 + item2 &lt;&lt; endl;</span><br><span class="line">    &#125; <span class="built_in">catch</span> (runtime_error err) &#123;</span><br><span class="line"><span class="comment">//runtime_error 是标准库异常种类的一种，定义在stdexcept头文件</span></span><br><span class="line"><span class="comment">//初始化runtime_error ,给它提供一个string或c字符串。</span></span><br></pre></td></tr></table></figure>
-
+<h3 id="try"><a class="markdownIt-Anchor" href="#try">#</a> try</h3>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (item1.<span class="built_in">isbn</span>() != item2.<span class="built_in">isbn</span>())</span><br><span class="line">    <span class="keyword">throw</span> <span class="built_in">runtime_error</span>(<span class="string">&quot;Data must refer to same ISBN&quot;</span>);</span><br><span class="line">    <span class="comment">// if we&#x27;re still here, the ISBNs are the same</span></span><br><span class="line">    cout &lt;&lt; item1 + item2 &lt;&lt; endl;</span><br><span class="line">    &#125; <span class="built_in">catch</span> (runtime_error err) &#123;</span><br><span class="line"><span class="comment">//runtime_error 是标准库异常种类的一种，定义在stdexcept头文件</span></span><br><span class="line"><span class="comment">//初始化runtime_error ,给它提供一个string或c字符串。</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>&#123;</span><br><span class="line">    program-statements</span><br><span class="line">&#125;<span class="built_in">catch</span> (excetion-declaration)&#123;</span><br><span class="line">    handle-statements</span><br><span class="line">&#125;<span class="built_in">catch</span> (excetion-declaration)&#123;</span><br><span class="line">    handle-statements </span><br></pre></td></tr></table></figure>
-
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// stdexcept头文件定义了几种常见异常类</span></span><br><span class="line">excpetion           <span class="comment">//最常见的问题</span></span><br><span class="line">runtime_error       <span class="comment">//只有在运行时才能检测出的问题</span></span><br><span class="line">range_error         <span class="comment">//运行时错误：生成的结果超出有意义的范围</span></span><br><span class="line">overflow_error      <span class="comment">//运行时错误：计算上溢</span></span><br><span class="line">underfloe_error     <span class="comment">//运行时错误：计算下溢</span></span><br><span class="line">logic_error         <span class="comment">//程序逻辑错误</span></span><br><span class="line">domain_error        <span class="comment">//逻辑错误：参数对应的结果不存在</span></span><br><span class="line">invalid_argument    <span class="comment">//逻辑错误：无效参数</span></span><br><span class="line">length_error        <span class="comment">//逻辑错误：试图创建一个超出类型虽大长度的对象</span></span><br><span class="line">out_of_range        <span class="comment">//使用一个超出有效范围的值</span></span><br></pre></td></tr></table></figure>
-
 
   </div>
 
@@ -226,7 +228,7 @@ Saigyouji Yuyuko!</title>
     <div class="item left">
       
 
-  <a href="/2023/03/27/vircle/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;img.paulzzh.tech&#x2F;touhou&#x2F;random?940623" title="中美新能源汽车行业分析 221275013-赵研">
+  <a href="/2023/03/27/vircle/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;img.paulzzh.tech&#x2F;touhou&#x2F;random?72040" title="中美新能源汽车行业分析 221275013-赵研">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>中美新能源汽车行业分析 221275013-赵研</h3>
@@ -236,7 +238,7 @@ Saigyouji Yuyuko!</title>
     <div class="item right">
       
 
-  <a href="/2023/04/02/test/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;img.paulzzh.tech&#x2F;touhou&#x2F;random?474948" title="未命名">
+  <a href="/2023/04/02/test/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;img.paulzzh.tech&#x2F;touhou&#x2F;random?111062" title="未命名">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>未命名</h3>
@@ -258,7 +260,7 @@ Saigyouji Yuyuko!</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#string"><span class="toc-number">1.</span> <span class="toc-text">string</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6cctype"><span class="toc-number">1.1.</span> <span class="toc-text">头文件cctype</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E6%AF%8F%E4%B8%AA%E5%AD%97%E7%AC%A6-%E4%BD%BF%E7%94%A8%E5%9F%BA%E4%BA%8E%E8%8C%83%E5%9B%B4for%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.2.</span> <span class="toc-text">处理每个字符 使用基于范围for语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8vector"><span class="toc-number">1.3.</span> <span class="toc-text">容器vector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8-%E5%AE%B9%E5%99%A8%E7%9A%84%E6%8C%87%E9%92%88"><span class="toc-number">1.4.</span> <span class="toc-text">迭代器:容器的指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.5.</span> <span class="toc-text">命名的强制类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#try"><span class="toc-number">1.6.</span> <span class="toc-text">try</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#string"><span class="toc-number">1.</span> <span class="toc-text"> string</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%B4%E6%96%87%E4%BB%B6cctype"><span class="toc-number">1.1.</span> <span class="toc-text"> 头文件 cctype</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E6%AF%8F%E4%B8%AA%E5%AD%97%E7%AC%A6-%E4%BD%BF%E7%94%A8%E5%9F%BA%E4%BA%8E%E8%8C%83%E5%9B%B4for%E8%AF%AD%E5%8F%A5"><span class="toc-number">1.2.</span> <span class="toc-text"> 处理每个字符 使用基于范围 for 语句</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8vector"><span class="toc-number">1.3.</span> <span class="toc-text"> 容器 vector</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%AE%B9%E5%99%A8%E7%9A%84%E6%8C%87%E9%92%88"><span class="toc-number">1.4.</span> <span class="toc-text"> 迭代器：容器的指针</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E5%90%8D%E7%9A%84%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.5.</span> <span class="toc-text"> 命名的强制类型转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#try"><span class="toc-number">1.6.</span> <span class="toc-text"> try</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -333,42 +335,6 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2018/07/24/markdown/" title="Markdown Style test">Markdown Style test</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/04/02/test/" title="未命名">未命名</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2022/12/08/c++%20plus%20ultra%20max%20pro/" title="c++ plus ultra max pro">c++ plus ultra max pro</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2022/12/21/communicate/" title="灌水">灌水</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2023/03/27/vircle/" title="中美新能源汽车行业分析 221275013-赵研">中美新能源汽车行业分析 221275013-赵研</a></span>
   </li>
 
@@ -378,7 +344,7 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2022/11/28/ege/" title="ege字符公式">ege字符公式</a></span>
+    <span><a href="/2018/07/24/markdown/" title="Markdown Style test">Markdown Style test</a></span>
   </li>
 
       
@@ -387,7 +353,7 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/04/02/python%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" title="python实用工具">python实用工具</a></span>
+    <span><a href="/2023/03/27/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="未命名">未命名</a></span>
   </li>
 
       
@@ -405,7 +371,43 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/03/27/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="未命名">未命名</a></span>
+    <span><a href="/2022/12/21/communicate/" title="灌水">灌水</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/12/08/c++%20plus%20ultra%20max%20pro/" title="c++ plus ultra max pro">c++ plus ultra max pro</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/11/28/ege/" title="ege字符公式">ege字符公式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/02/test/" title="未命名">未命名</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/04/02/python%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" title="python实用工具">python实用工具</a></span>
   </li>
 
   </ul>

@@ -102,12 +102,12 @@ Saigyouji Yuyuko!</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?936903"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?137652"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?510742"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?749548"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?399029"></li>
-          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?612950"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?877959"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?332153"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?966174"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?989134"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?272156"></li>
+          <li class="item" data-background-image="https://img.paulzzh.tech/touhou/random?69470"></li>
         </ul>
       </div>
     </header>
@@ -151,14 +151,16 @@ Saigyouji Yuyuko!</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h1><table>
+    <h1 id="常用快捷键"><a class="markdownIt-Anchor" href="#常用快捷键">#</a> 常用快捷键</h1>
+<table>
 <thead>
 <tr>
 <th>按键</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>F4</td>
 <td>同名文件切换</td>
 </tr>
@@ -174,10 +176,12 @@ Saigyouji Yuyuko!</title>
 <td>alt shift 0</td>
 <td>右侧栏</td>
 </tr>
-</tbody></table>
-<h1 id="main函数"><a href="#main函数" class="headerlink" title="main函数"></a>main函数</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Qapplication::a.<span class="built_in">exec</span>()<span class="comment">//不关闭主窗口则循环</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Qwidget"><a href="#Qwidget" class="headerlink" title="Qwidget"></a>Qwidget</h1><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QWidget&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyWidget</span> : <span class="keyword">public</span> QWidget</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//引入Qt信号和槽机制的一个宏</span></span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="comment">//构造函数中parent是指父窗口,父窗口对象的指针</span></span><br><span class="line"><span class="comment">//如果parent是0或者NULL，那么窗口就是一个顶层的窗口</span></span><br><span class="line">    <span class="built_in">MyWidget</span> (QWidget *parent = <span class="number">0</span>);</span><br><span class="line">    ~ <span class="built_in">MyWidget</span> ();</span><br><span class="line">&#125;;</span><br><span class="line">	<span class="comment">//顶层窗口就是在任务栏可以找到的窗口</span></span><br></pre></td></tr></table></figure>
+</tbody>
+</table>
+<h1 id="main函数"><a class="markdownIt-Anchor" href="#main函数">#</a> main 函数</h1>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Qapplication::a.<span class="built_in">exec</span>()<span class="comment">//不关闭主窗口则循环</span></span><br></pre></td></tr></table></figure>
+<h1 id="qwidget"><a class="markdownIt-Anchor" href="#qwidget">#</a> Qwidget</h1>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;QWidget&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">MyWidget</span> : <span class="keyword">public</span> QWidget</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">//引入Qt信号和槽机制的一个宏</span></span><br><span class="line">    Q_OBJECT</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"><span class="comment">//构造函数中parent是指父窗口,父窗口对象的指针</span></span><br><span class="line"><span class="comment">//如果parent是0或者NULL，那么窗口就是一个顶层的窗口</span></span><br><span class="line">    <span class="built_in">MyWidget</span> (QWidget *parent = <span class="number">0</span>);</span><br><span class="line">    ~ <span class="built_in">MyWidget</span> ();</span><br><span class="line">&#125;;</span><br><span class="line">	<span class="comment">//顶层窗口就是在任务栏可以找到的窗口</span></span><br></pre></td></tr></table></figure>
 
       <div class="tags">
           <a href="/tags/qt/" rel="tag"><i class="ic i-tag"></i> qt</a>
@@ -232,7 +236,7 @@ Saigyouji Yuyuko!</title>
     <div class="item left">
       
 
-  <a href="/2023/04/02/python%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;img.paulzzh.tech&#x2F;touhou&#x2F;random?766940" title="python实用工具">
+  <a href="/2023/04/02/python%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;img.paulzzh.tech&#x2F;touhou&#x2F;random?845353" title="python实用工具">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>python实用工具</h3>
@@ -256,7 +260,7 @@ Saigyouji Yuyuko!</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">1.</span> <span class="toc-text">常用快捷键</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#main%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">main函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Qwidget"><span class="toc-number">3.</span> <span class="toc-text">Qwidget</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="toc-number">1.</span> <span class="toc-text"> 常用快捷键</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#main%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text"> main 函数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#qwidget"><span class="toc-number">3.</span> <span class="toc-text"> Qwidget</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
       </div>
@@ -329,33 +333,6 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/04/03/qt/" title="QT">QT</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2023/04/02/test/" title="未命名">未命名</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/2018/07/24/markdown/" title="Markdown Style test">Markdown Style test</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
     <span><a href="/2022/12/21/communicate/" title="灌水">灌水</a></span>
   </li>
 
@@ -365,7 +342,7 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/03/27/vircle/" title="中美新能源汽车行业分析 221275013-赵研">中美新能源汽车行业分析 221275013-赵研</a></span>
+    <span><a href="/2023/04/02/python%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" title="python实用工具">python实用工具</a></span>
   </li>
 
       
@@ -392,6 +369,33 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
+    <span><a href="/2023/04/03/qt/" title="QT">QT</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2023/03/27/vircle/" title="中美新能源汽车行业分析 221275013-赵研">中美新能源汽车行业分析 221275013-赵研</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2018/07/24/markdown/" title="Markdown Style test">Markdown Style test</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
     <span><a href="/2022/11/28/ege/" title="ege字符公式">ege字符公式</a></span>
   </li>
 
@@ -401,7 +405,7 @@ Saigyouji Yuyuko!</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/2023/04/02/python%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/" title="python实用工具">python实用工具</a></span>
+    <span><a href="/2023/04/02/test/" title="未命名">未命名</a></span>
   </li>
 
   </ul>
